@@ -3,7 +3,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set, onValue, update } from "firebase/database";
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
@@ -42,5 +42,26 @@ function writeUserData(userId: string, name: string, email: string, password: st
     });
 
 }
+function readUser(userId:string)
+{
+  const db = getDatabase();
+  const reference = ref(db, 'users/' + userId);
+  class User
+  {
+    username!: string;
+    email!: string;
+    password!: string;
+  };
+  var userData = new User();
+  onValue(reference, (snapshot) => 
+  {
+    const data = snapshot.val();
+    userData.username=data.username;
+    userData.email=data.email;
+    userData.password=data.password;
+  });
+  return userData;
+}
 
-writeUserData("MikuId", "Miki", "Miki2000@gmail.com", "123456789")
+//writeUserData("MikuId", "Miki", "Miki2000@gmail.com", "123456789")
+//console.log(readUser("MikuId"));
