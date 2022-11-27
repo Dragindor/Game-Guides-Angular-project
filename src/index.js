@@ -34,7 +34,6 @@ function writeUserData(userId, name, email, password)
       email: email,
       password: password
     });
-
 }
 
 writeUserData("MikuId", "Miki", "Miki2000@gmail.com", "123456789")
