@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { appRoutingModule } from './app.routing';
+import { AppRoutingModule } from './app.routing';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 
@@ -23,7 +23,7 @@ import { GameDetailsComponent } from './game-details/game-details.component';
   ],
   imports: [
     BrowserModule,
-    appRoutingModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
