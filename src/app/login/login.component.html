@@ -1,12 +1,18 @@
  <div id="login-box">
-  <div class="left">
-    <h1 id='status'>login</h1>
-    <input type="text" id="email" name="email" placeholder="E-mail" />
-    <input type="password" id="password" name="password" placeholder="Password" />
-    
-    <input type="submit" id='login' name="login" value="Login" />
-
-  </div>
+  <form id="loginForm" (ngSubmit)="handleFormSubmit(loginForm.value)" #loginForm="ngForm">
+    <h2>Create a new account.</h2>
+    <hr />
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="username" name="email" ngModel required />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" ngModel required />
+    </div>
+    <br />
+    <button id="LoginSubmit" type="submit" class="site-btn">Login</button>
+</form>
   
   <div class="right">
     <span class="loginwith">Sign in with<br />social network</span>
@@ -17,3 +23,20 @@
   </div>
   <div class="or">OR</div>
 </div>
+
+<!-- <div class="card-body">
+  <form id="loginForm" (ngSubmit)="handleFormSubmit(loginForm.value)" #loginForm="ngForm">
+      <h2>Create a new account.</h2>
+      <hr />
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" id="username" name="email" ngModel required />
+      </div>
+      <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password" ngModel required />
+      </div>
+      <br />
+      <button id="LoginSubmit" type="submit" class="site-btn">Login</button>
+  </form>
+</div> -->
