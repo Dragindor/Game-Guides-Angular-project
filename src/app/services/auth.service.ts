@@ -24,7 +24,7 @@
   const auth = getAuth();
 
 
-function Register(value:any){
+export function Register(value:any){
 
   var email = value.email;
   var password = value.password;
@@ -54,7 +54,7 @@ function Register(value:any){
 
 };
 
-function login(value:any){
+export function Login(value:any){
 
   var email = value.email;
   var password = value.password;
