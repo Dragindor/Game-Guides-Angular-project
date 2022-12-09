@@ -63,5 +63,21 @@ function readUser(userId:string)
   return userData;
 }
 
+function writeGameData(gameId: string, name: string, picture: string, description: string, genres:string, rating:string)
+{
+  const db = getDatabase();
+  const reference = ref(db, 'games/' + gameId);
+
+  set(reference, 
+    {
+      name: name,
+      picture: picture,
+      description: description,
+      genres: genres,
+      rating: rating
+    });
+
+}
 //writeUserData("MikuId", "Miki", "Miki2000@gmail.com", "123456789")
 //console.log(readUser("MikuId"));
+writeGameData("firstGame","Elden ring", "https://stevivor.com/wp-content/uploads/2022/02/elden-ring-990x556.jpg", "Great Game", "Open world, Adventure, Multiplayer", "10")
