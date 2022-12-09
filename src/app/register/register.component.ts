@@ -1,4 +1,12 @@
 import { Component } from '@angular/core';
 
-@Component({ templateUrl: 'register.component.html' })
-export class RegisterComponent {}
+@Component({
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
+})
+export class RegisterComponent {
+  handleFormSubmit(value: {username: string; email: string; password: string;}): void{
+    console.log(value);
+  }
+}
