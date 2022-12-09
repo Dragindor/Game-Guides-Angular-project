@@ -78,6 +78,33 @@ function writeGameData(gameId: string, name: string, picture: string, descriptio
     });
 
 }
-//writeUserData("MikuId", "Miki", "Miki2000@gmail.com", "123456789")
+
+function readGameData(gameId:string)
+{
+  const db = getDatabase();
+  const reference = ref(db, 'games/' + gameId);
+  class Game
+  {
+    name!: string;
+    picture!: string;
+    description!: string;
+    genres!: string;
+    rating!: string;
+  };
+  var gameData = new Game();
+  onValue(reference, (snapshot) => 
+  {
+    const data = snapshot.val();
+    gameData.name=data.name;
+    gameData.picture=data.picture;
+    gameData.description=data.description;
+    gameData.genres=data.genres;
+    gameData.rating=data.rating;
+  });
+  return gameData;
+}
+//writeUserData("DragId", "Drag", "Drag2001@gmail.com", "123456789")
 //console.log(readUser("MikuId"));
-writeGameData("firstGame","Elden ring", "https://stevivor.com/wp-content/uploads/2022/02/elden-ring-990x556.jpg", "Great Game", "Open world, Adventure, Multiplayer", "10")
+// writeGameData("firstGame","Elden ring", 
+// "https://stevivor.com/wp-content/uploads/2022/02/elden-ring-990x556.jpg", "Great Game", "Open world, Adventure, Multiplayer", "10")
+//console.log(readGameData("firstGame"));
