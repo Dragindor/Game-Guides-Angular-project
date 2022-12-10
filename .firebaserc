@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "game-guides-eac29"
+  },
+  "targets": {
+    "game-guides-eac29": {
+      "hosting": {
+        "Game-Guides-Angular-project": [
+          "game-guides-eac29"
+        ]
+      }
+    }
+  }
+}
