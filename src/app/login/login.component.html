@@ -1,42 +1,33 @@
- <div id="login-box">
-  <form id="loginForm" (ngSubmit)="handleFormSubmit(loginForm.value)" #loginForm="ngForm">
-    <h2>Create a new account.</h2>
-    <hr />
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="text" class="form-control" id="username" name="email" ngModel required />
+<div class="displayTable">
+  <div class="displayTableCell">
+    <div class="authBlock">
+      <h3>Sign In</h3>
+      <div class="formGroup">
+        <input type="text" class="formControl" placeholder="Username" #userName required>
+      </div>
+      <div class="formGroup">
+        <input type="password" class="formControl" placeholder="Password" #userPassword required>
+      </div>
+      <!-- Calling SignIn Api from AuthService -->
+      <div class="formGroup">
+        <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+      </div>
+      <div class="formGroup">
+        <span class="or"><span class="orInner">Or</span></span>
+      </div>
+      <!-- Calling GoogleAuth Api from AuthService -->
+      <div class="formGroup">
+        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+          <i class="fab fa-google-plus-g"></i>
+          Log in with Google
+        </button>
+      </div>
+      <div class="forgotPassword">
+        <span routerLink="/forgot-password">Forgot Password?</span>
+      </div>
     </div>
-    <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" name="password" ngModel required />
+    <div class="redirectToLogin">
+      <span>Don't have an account?<span class="redirect" routerLink="/register-user"> Sign Up</span></span>
     </div>
-    <br />
-    <button id="LoginSubmit" type="submit" class="site-btn">Login</button>
-</form>
-  
-  <div class="right">
-    <span class="loginwith">Sign in with<br />social network</span>
-    
-    <button class="social-signin facebook">Log in with facebook</button>
-    <button class="social-signin twitter">Log in with Twitter</button>
-    <button class="social-signin google">Log in with Google+</button>
   </div>
-  <div class="or">OR</div>
 </div>
-
-<!-- <div class="card-body">
-  <form id="loginForm" (ngSubmit)="handleFormSubmit(loginForm.value)" #loginForm="ngForm">
-      <h2>Create a new account.</h2>
-      <hr />
-      <div class="form-group">
-          <label for="email">Email</label>
-          <input type="text" class="form-control" id="username" name="email" ngModel required />
-      </div>
-      <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" name="password" ngModel required />
-      </div>
-      <br />
-      <button id="LoginSubmit" type="submit" class="site-btn">Login</button>
-  </form>
-</div> -->
