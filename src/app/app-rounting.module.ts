@@ -7,6 +7,7 @@ import { RegisterComponent } from './register';
 import { AllGamesComponent } from './all-games/all-games.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactComponent } from './contact/contact.component';
+import { GameDetailsComponent } from './game-details/game-details.component';
 
 const routes: Routes = [
     { path: '', component: AppComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
     { path: 'all-games', component: AllGamesComponent },
     { path: 'dashboard', component: DashboardComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'game-details', component: GameDetailsComponent },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
