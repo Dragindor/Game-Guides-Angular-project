@@ -10,26 +10,23 @@
 <body>
   <hearder>
   <!-- nav -->
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-  <div class="navbar-nav">
-      <a href="/" class="nav-item nav-link" routerLink="/">Home</a>
-      <a href="/login" class="nav-item nav-link" routerLink="/login">Login</a>
-      <a href="/register" class="nav-item nav-link" routerLink="/register">Register</a>
-      <a href="/contact" class="nav-item nav-link" routerLink="/contact">contact</a>
-  </div>
-</nav>
+  <ul class="main-menu">
+    <li> <a href="index.html" class="site-logo"><img src="./assets/img/logo.png" alt="logo"></a></li>  
+    <li><a href="/" class="nav-item nav-link" routerLink="/">Home</a></li>
+    <li><a href="/contact" class="nav-item nav-link" routerLink="/contact">Contact</a></li>
+    <div *ngIf="authService.isLoggedIn==true">
+      <li><a href="/all-games" class="nav-item nav-link" routerLink="/all-games">All Games</a></li>
+      <li><a href="/game-details" class="nav-item nav-link" routerLink="/game-details">game-details</a></li>
+      <li><a href="/dashboard" class="nav-item nav-link" routerLink="/dashboard">Profile</a></li>
+    </div>
+    <div *ngIf="authService.isLoggedIn==false">
+      <li><a href="/login" class="nav-item nav-link" routerLink="/login">Login</a></li>
+      <li><a href="/register" class="nav-item nav-link" routerLink="/register">Register</a></li>
+    </div>
+  </ul>
 </hearder>
 
 <!-- main content container -->
-<div class="jumbotron">
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-8 offset-sm-2">
-
-          </div>
-      </div>
-  </div>
-</div>
   <app-root></app-root>
 </body>
 </html>
