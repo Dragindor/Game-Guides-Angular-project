@@ -8,8 +8,7 @@ import { AuthService } from '../shared/services/auth.service';
 })
 export class LoginComponent implements OnInit{
   constructor(
-    public authService: AuthService
-  ) { }
+    public authService: AuthService) { }
   ngOnInit() { }
 
 }
