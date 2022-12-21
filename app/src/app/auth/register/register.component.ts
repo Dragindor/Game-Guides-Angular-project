@@ -19,12 +19,12 @@ export class RegisterComponent {
 
   registerHandler(form: NgForm) {
     if (form.invalid) { return; }
-    const { email, password, rePassword} = form.value;
+    const { email, username, password, rePassword} = form.value;
     if(password == rePassword) 
     {
       this.passwordCheck = true;
       
-      this.authService.register(email!, password!, rePassword!)
+      this.authService.register(email!,username!, password!, rePassword!)
       .subscribe(user => {
         this.router.navigate(['/']);
       });

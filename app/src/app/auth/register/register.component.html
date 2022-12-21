@@ -17,6 +17,18 @@
       </p>
     </ng-container>
 
+    <!-- username -->
+    <input type="text" name="username" #usernameInput="ngModel" ngModel required [minlength]="3" id="username" placeholder="Username">
+
+    <ng-container *ngIf="usernameInput.touched">
+      <p class="error" *ngIf="usernameInput.errors?.['required']">
+        Username is required.
+      </p>
+      <p class="error" *ngIf="usernameInput.errors?.['minlength']">
+        Username must be at least {{usernameInput.errors?.['minlength']['requiredLength']}} characters long.
+      </p>
+    </ng-container>
+
     <!-- password -->
     <input type="password" name="password" #passwordInput="ngModel" ngModel required [minlength]="3" id="password" placeholder="Password">
 

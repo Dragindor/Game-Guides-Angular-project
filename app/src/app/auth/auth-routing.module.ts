@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from "@angular/router";
 import { AuthActivate } from "../shared/guards/auth.activate";
+import { DashboardComponent } from "./dashboard/dashboard.component";
 import { LoginComponent } from "./login/login.component";
 import { LogoutComponent } from "./logout/logout.component";
 
@@ -22,6 +23,15 @@ const routes: Routes = [
     data: {
       title: 'Register',
       loginRequired: false
+    }
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [AuthActivate],
+    data: {
+      title: 'Dashboard',
+      loginRequired: true
     }
   },
   {

@@ -28,8 +28,8 @@ export class AuthService implements OnDestroy {
     });
   }
 
-  register(email: string, password: string, rePassword: string) {
-    return this.http.post<IUser>('/api/register', {email, password, rePassword})
+  register(email: string, username:string, password: string, rePassword: string) {
+    return this.http.post<IUser>('/api/register', {email, username, password, rePassword})
       .pipe(tap(user => this.user$$.next(user)));
   }
 
