@@ -1,7 +1,5 @@
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { NgModule } from '@angular/core';
-
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './core/home/home.component';
 
@@ -13,7 +11,6 @@ const routes: Routes = [
   },
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)},
   { path: 'game', loadChildren: () => import('./game/game.module').then(m => m.GameModule)},
-  { path: 'dashboard', component: DashboardComponent },
   { path: 'contact', component: ContactComponent },
 ];
 @NgModule({
