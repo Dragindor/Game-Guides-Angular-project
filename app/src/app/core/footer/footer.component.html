@@ -16,10 +16,25 @@
               <div class="footer-widget">
                   <h2 class="fw-title">Usfull Links</h2>
                   <ul>
-                      <li><a href="">Home</a></li>
-                      <li><a href="/Games/all-games">Games</a></li>
-                      <li><a href="">Reviews</a></li>
-                      <li><a href="">Latest news</a></li>
+                    <li><a href="/" routerLink="/">Home</a></li>
+                    <li><a href="/contact"  routerLink="/contact">Contact</a></li>
+                  <ng-template #loggedOutTemplate>
+                      <div class="guest">                               
+                          <li><a  routerLink="/auth/login">Login</a></li>
+                          <li><a  routerLink="/auth/register">Register</a></li>               
+                      </div>
+                  </ng-template>
+                  
+                  <ng-template #loggedInTemplate>          
+                      <div class="user">
+                          <li><a  routerLink="/game/all-games">All Games</a></li>
+                          <li><a  href="/game/new" routerLink="/game/new">Add Game</a></li>
+                          <li><a  routerLink="/dashboard">Profile</a></li>
+                          <li><a  routerLink="/auth/logout">Log out</a></li>
+                      </div>
+                    </ng-template>
+              
+                    <ng-container *ngTemplateOutlet="isLoggedIn ? loggedInTemplate : loggedOutTemplate"></ng-container>
                   </ul>
               </div>
           </div>

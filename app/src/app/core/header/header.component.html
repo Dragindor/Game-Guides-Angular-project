@@ -5,22 +5,19 @@
           <li> <a href="index.html" class="site-logo"><img src="../../../assets/img/logo.png" alt="logo"></a></li>
           <li><a href="/" class="nav-item nav-link" routerLink="/">Home</a></li>
           <li><a href="/contact" class="nav-item nav-link" routerLink="/contact">Contact</a></li>
-          <div *ngIf="isLoggedIn">
-        </div>
         <ng-template #loggedOutTemplate>
             <div class="guest">                               
-                <li><a  routerLink="/auth/login">Login</a></li>
-                <li><a  routerLink="/auth/register">Register</a></li>               
+                <li><a class="nav-item nav-link" routerLink="/auth/login">Login</a></li>
+                <li><a class="nav-item nav-link" routerLink="/auth/register">Register</a></li>               
             </div>
         </ng-template>
         
         <ng-template #loggedInTemplate>          
             <div class="user">
-                <li><a  routerLink="/game/all-games">All Games</a></li>
-                <li><a  routerLink="/game/game-details">game-details</a></li>
-                <li><a href="/game/new" routerLink="/game/new">Add Game</a></li>
-                <li><a  routerLink="/dashboard">Profile</a></li>
-                <li><a  routerLink="/auth/logout">Log out</a></li>
+                <li><a class="nav-item nav-link" routerLink="/game/all-games">All Games</a></li>
+                <li><a class="nav-item nav-link" href="/game/new" routerLink="/game/new">Add Game</a></li>
+                <li><a class="nav-item nav-link" routerLink="/auth/dashboard">Profile</a></li>
+                <li><a class="nav-item nav-link" routerLink="/auth/logout">Log out</a></li>
             </div>
           </ng-template>
     
