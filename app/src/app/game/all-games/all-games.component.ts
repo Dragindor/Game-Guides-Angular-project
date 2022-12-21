@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GameService } from '../game.service';
 import { IGame } from '../../shared/interfaces/game';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-all-games',
@@ -12,10 +12,10 @@ export class AllGamesComponent implements OnInit{
   gameList: IGame[] | null = null;
   errorFetcingData = false;
 
-  constructor(private GameService: GameService) { }
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.GameService.getGames().subscribe({
+    this.apiService.loadGames().subscribe({
       next: (value) => {
         this.gameList = value;
       },
