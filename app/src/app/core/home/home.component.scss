@@ -1,0 +1,23 @@
+* {box-sizing:border-box}
+
+.body{
+    background-image: './assets/img/header-bg/1.jpg';
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.description {
+    display: block;
+    width: 500px;
+    height: 90px;
+    overflow: hidden;
+    // white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.genres {
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    // white-space: nowrap;
+    text-overflow: ellipsis;
+}

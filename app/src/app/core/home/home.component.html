@@ -1,1 +1,27 @@
-<app-all-games></app-all-games>
+	<!-- Blog section -->
+    <section class="page-top-section">
+        <div class="container">
+            <h2>Recent Games</h2>
+        </div>
+    </section>
+    <!-- Page top section end -->
+    
+    <!-- Blog section -->
+    <section class="blog-section spad">
+        <div class="container">
+            <div class="">
+                <div class="row">
+                    <div class="blog-post review-post col-lg-6 col-md-6" *ngFor="let game of gameList; let i = index">
+                        <img src="{{game.imageUrl}}" alt="">
+                        <div class="post-date">Added By: {{game._ownerId.username}} </div>
+                        <h3>{{game.title}}</h3>
+                        <p class="genres">{{game.genres}}</p>
+                        <p class="description">{{game.description}}</p>
+                        <div class="rating">Rating: {{game.rating}}/10</div>
+                        <a class="details-btn site-btn" routerLink="/game/detail/{{game._id}}">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- Blog section end -->
