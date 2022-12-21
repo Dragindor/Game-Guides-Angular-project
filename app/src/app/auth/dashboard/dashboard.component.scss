@@ -1,0 +1,32 @@
+.title{
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+}
+.description {
+    display: block;
+    width: 500px;
+    height: 90px;;
+    overflow: hidden;
+    // white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.genres {
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    // white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.post-date {
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 700;
+	padding: 3px 16px;
+	margin-bottom: 25px;
+	background: #10ddb4;
+}
+img {
+    max-width: 1200px;
+    max-height: 1000px;
+}

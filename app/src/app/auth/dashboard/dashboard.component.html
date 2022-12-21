@@ -1,0 +1,22 @@
+<section class="page-top-section">
+  <div class="container">
+    <h2 *ngIf="!isEmpty">Your Games, {{userName}}</h2>
+    <h2 *ngIf="isEmpty">You haven't added Games yet!</h2>
+  </div>
+</section>
+<!-- Page top section end -->
+
+<!-- Blog section -->
+<section class="characters-section character-one">
+	<div class="container" *ngFor="let game of games; let i = index">
+		<div class="character-info">
+          <img src="{{game.imageUrl}}" alt="">
+          <div class="post-date">Added By: {{game._ownerId.username}} </div>
+          <h3 class="title">{{game.title}}</h3>
+          <p>{{game.description}}</p>
+          <p>Geners: {{game.genres}}</p>
+          <div class="post-date">Rating: {{game.rating}}/10</div>
+          <div class="post-date">Price: {{game.price}}</div>
+      </div>
+    </div>
+</section>
