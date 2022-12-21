@@ -1,27 +1,23 @@
 <div class="header-section">
-  <!-- nav -->
-  <nav>
-      <ul class="main-menu">
-          <li> <a href="index.html" class="site-logo"><img src="../../../assets/img/logo.png" alt="logo"></a></li>
-          <li><a href="/" class="nav-item nav-link" routerLink="/">Home</a></li>
-          <li><a href="/contact" class="nav-item nav-link" routerLink="/contact">Contact</a></li>
-        <ng-template #loggedOutTemplate>
-            <div class="guest">                               
+    <!-- nav -->
+    <nav class="navi">
+        <a href="index.html" class="site-logo"><img src="../../../assets/img/logo.png" alt="logo"></a>
+        <ul class="main-menu">
+            <li><a href="/" class="nav-item nav-link" routerLink="/">Home</a></li>
+            <li><a href="/contact" class="nav-item nav-link" routerLink="/contact">Contact</a></li>
+            <ng-template #loggedOutTemplate>
                 <li><a class="nav-item nav-link" routerLink="/auth/login">Login</a></li>
-                <li><a class="nav-item nav-link" routerLink="/auth/register">Register</a></li>               
-            </div>
-        </ng-template>
-        
-        <ng-template #loggedInTemplate>          
-            <div class="user">
+                <li><a class="nav-item nav-link" routerLink="/auth/register">Register</a></li>
+            </ng-template>
+
+            <ng-template #loggedInTemplate>
                 <li><a class="nav-item nav-link" routerLink="/game/all-games">All Games</a></li>
                 <li><a class="nav-item nav-link" href="/game/new" routerLink="/game/new">Add Game</a></li>
                 <li><a class="nav-item nav-link" routerLink="/auth/dashboard">Profile</a></li>
                 <li><a class="nav-item nav-link" routerLink="/auth/logout">Log out</a></li>
-            </div>
-          </ng-template>
-    
-          <ng-container *ngTemplateOutlet="isLoggedIn ? loggedInTemplate : loggedOutTemplate"></ng-container>
-      </ul>
-  </nav>
+            </ng-template>
+
+            <ng-container *ngTemplateOutlet="isLoggedIn ? loggedInTemplate : loggedOutTemplate"></ng-container>
+        </ul>
+    </nav>
 </div>
