@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "63a310ce164a6509384b0767"
+  },
+  "games": [],
+  "email": "hhristov2001@googlemail.com",
+  "username": "Hristo Hristov",
+  "password": "$2b$05$0qM/ox05GU2g.JR/DLOdku8tGSWDVEcfd02obwQKe1XLH4i54lsbS",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671631054231"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671631054231"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a31416164a6509384b079f"
+  },
+  "games": [],
+  "email": "random@gmail.com",
+  "username": "random",
+  "password": "$2b$05$lT2PKRutSx2Cn66AeN7W2ufXLGeQtTkVAe22y6ayutq5Ug9yTTTgm",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671631894953"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671631894953"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a33aac164a6509384b08db"
+  },
+  "games": [],
+  "email": "thirdUser@gmail.com",
+  "username": "thirdUser",
+  "password": "$2b$05$C13824scACX9lxqVQBWbVOGbnYQ7zqJ2wOLmRRcNgjBf3hMtZDqrO",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671641772868"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671641772868"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a34b198c63a92870957c37"
+  },
+  "games": [],
+  "email": "Bella@gmail.com",
+  "username": "Bella",
+  "password": "$2b$05$Y6.tikyOFAfJC4owt6Df5O2BC3ik6wbgJt8ER.SbpPbWhMke4HTZ2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671645977037"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671645977037"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a367678c63a92870957e04"
+  },
+  "games": [],
+  "email": "hey@gmail.com",
+  "username": "hey",
+  "password": "$2b$05$wJ6y6G3TXOwABEhN6NJWiewSBQ02K4c7tsUBsMuzJMmutqpRerCmG",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671653223850"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671653223850"
+    }
+  },
+  "__v": 0
+}]

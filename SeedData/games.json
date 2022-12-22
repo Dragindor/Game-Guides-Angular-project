@@ -1,0 +1,169 @@
+[{
+  "_id": {
+    "$oid": "63a312b6164a6509384b078a"
+  },
+  "title": "God Of War",
+  "_ownerId": {
+    "$oid": "63a310ce164a6509384b0767"
+  },
+  "imageUrl": "https://wallpaperforu.com/wp-content/uploads/2022/01/Wallpaper-God-Of-War-God-Of-War-2018-God-Of-9-2048x1140.jpg",
+  "description": "Enter the Norse realm\nHis vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.\n\nGrasp a second chance\nKratos is a father again. As mentor and protector to Atreus, a son determined to earn his respect, he is forced to deal with and control the rage that has long defined him while out in a very dangerous world with his son.\n\nJourney to a dark, elemental world of fearsome creatures\nFrom the marble and columns of ornate Olympus to the gritty forests, mountains and caves of pre-Viking Norse lore, this is a distinctly new realm with its own pantheon of creatures, monsters and gods.\n\nEngage in visceral, physical combat\nWith an over the shoulder camera that brings the player closer to the action than ever before, fights in God of War™ mirror the pantheon of Norse creatures Kratos will face: grand, gritty and grueling. A new main weapon and new abilities retain the defining spirit of the God of War series while presenting a vision of conflict that forges new ground in the genre.",
+  "rating": "10",
+  "genres": "Open world, Adventure, Story, Fighting, Single-Player, 3D, Action Rpg",
+  "price": "30$",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671631542675"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671631542675"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a314b2164a6509384b07a5"
+  },
+  "title": "Warframe",
+  "_ownerId": {
+    "$oid": "63a31416164a6509384b079f"
+  },
+  "imageUrl": "https://n9e5v4d8.ssl.hwcdn.net/images/longlanding/warframe-metacard.png",
+  "description": "Confront warring factions throughout a sprawling interplanetary system as you follow the guidance of the mysterious Lotus and level up your Warframe, build an Arsenal of destructive firepower, and realize your true potential across massive open worlds in this thrilling, genre-defining third-person combat experience. BECOME A POWERFUL WARRIOR\nEnter your Warframe: a bio-metal suit of untold power. Unleash its Abilities and wield a vast array of devastating weaponry to effortlessly annihilate hordes of enemies on sight. And when the slaughter is over, you can earn or instantly unlock 40+ different Warframes - each with a unique suite of powers - to re-experience the mayhem any way you want.",
+  "rating": "9.5",
+  "genres": "Free to Play, Action Rpg, Looter Shooter, Multiplayer",
+  "price": "Free",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671632050095"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671632050095"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a3378e164a6509384b08ca"
+  },
+  "title": "Yu-Gi-Oh! Master Duel",
+  "_ownerId": {
+    "$oid": "63a31416164a6509384b079f"
+  },
+  "imageUrl": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_YuGiOhMasterDuel_image1600w.jpg",
+  "description": "Finally, the \"Yu-Gi-Oh!\" digital card game you've been waiting for!\n\nThe definitive edition of the competitive card game that has been evolving for over 20 years!\nDuel at the highest level against Duelists from all over the world.\n\nGet ready: it's time to Duel!\n\n------------------------------------------------------------------------------\n[About \"Yu-Gi-Oh! MASTER DUEL\"]\nNow you can play the \"Yu-Gi-Oh! TCG,\" digitally, anywhere.\nFast-paced Duels with stunning HD graphics and a new, dynamic soundtrack! Get ready to challenge Duelists around the world!\n\n◇Play Duels at Any Level!\nThe full Yu-Gi-Oh! experience is available for anyone at any Skill Level. Don't worry if you're a new player or if you haven't Dueled in a while, the in-game tutorials will teach you the basics on how to play the Yu-Gi-Oh! TRADING CARD GAME. You'll be given a Deck when you finish to help you start your journey!\nCollect new cards as you progress through the game to power up your Decks!",
+  "rating": "7",
+  "genres": "Card Game, Strategy, Free To Play, Multiplayer, Gacja",
+  "price": "Free",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671640974826"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671640974826"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a33a76164a6509384b08d5"
+  },
+  "title": "Cyberpunk 2077",
+  "_ownerId": {
+    "$oid": "63a31416164a6509384b079f"
+  },
+  "imageUrl": "https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S1_03_2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7",
+  "description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades. The relationships you forge and the choices you make will shape the story and the world around you. Legends are made here. What will yours be?",
+  "rating": "9",
+  "genres": "Single Player, Action Rpg, First Person Shooter, Open World, Nudity, Sci-fi",
+  "price": "60$",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671641718627"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671641718627"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a33b5b164a6509384b08e1"
+  },
+  "title": "The Witcher® 3: Wild Hunt",
+  "_ownerId": {
+    "$oid": "63a33aac164a6509384b08db"
+  },
+  "imageUrl": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/12/the-witcher-3-wild-hunt-complete-edition-key-art.jpg",
+  "description": "THE MOST AWARDED GAME OF A GENERATION\nNOW ENHANCED FOR THE NEXT\n\nYou are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world.\n\nUpdated to the latest version, The Witcher 3: Wild Hunt comes with new features and items, including a built-in Photo Mode, swords, armor, and alternate outfits inspired by The Witcher Netflix series — and more!",
+  "rating": "10",
+  "genres": "Action Rpg, Open World, Story Reach, Atmosphere, Game of the Year,  Mature, Fantasy",
+  "price": "30$",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671641947588"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671641947588"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a463459376f01718427a76"
+  },
+  "title": "Elden Ring",
+  "_ownerId": {
+    "$oid": "63a310ce164a6509384b0767"
+  },
+  "imageUrl": "https://stevivor.com/wp-content/uploads/2022/02/elden-ring-990x556.jpg",
+  "description": "THE NEW FANTASY ACTION RPG.\nRise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.\n• A Vast World Full of Excitement\nA vast world where open fields with a variety of situations and huge dungeons with complex and three-dimensional designs are seamlessly connected. As you explore, the joy of discovering unknown and overwhelming threats await you, leading to a high sense of accomplishment.\n• Create your Own Character\nIn addition to customizing the appearance of your character, you can freely combine the weapons, armor, and magic that you equip. You can develop your character according to your play style, such as increasing your muscle strength to become a strong warrior, or mastering magic.\n• An Epic Drama Born from a Myth\nA multilayered story told in fragments. An epic drama in which the various thoughts of the characters intersect in the Lands Between.\n• Unique Online Play that Loosely Connects You to Others\nIn addition to multiplayer, where you can directly connect with other players and travel together, the game supports a unique asynchronous online element that allows you to feel the presence of others.",
+  "rating": "10",
+  "genres": "Open world, Adventure, Multiplayer",
+  "price": "60$",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671717701107"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671717701107"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a466cb9376f01718427af0"
+  },
+  "title": "Delete",
+  "_ownerId": {
+    "$oid": "63a310ce164a6509384b0767"
+  },
+  "imageUrl": "https://img.freepik.com/free-photo/finger-pressing-delete-key_1112-662.jpg?w=2000",
+  "description": "DeleteDeleteDeleteDelete",
+  "rating": "Delete",
+  "genres": "Delete,DeleteDelete",
+  "price": "Delete",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671718603787"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671718603787"
+    }
+  },
+  "__v": 0
+}]
