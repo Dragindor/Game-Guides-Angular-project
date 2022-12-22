@@ -23,3 +23,4 @@ You can setup the project with the following commands in terminal:
 * Public Area
 * Area for all the games
 * Area to see your own games in your profile
+* You can delete your own games from your profile page
