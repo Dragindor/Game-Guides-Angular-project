@@ -9,12 +9,8 @@ import { IGame } from "../shared/interfaces/game";
 export class GameService {
   constructor(private http: HttpClient) { }
 
-  getGames(maxCount?: number) {
-    let url = '/api/games';
-    if (maxCount) {
-      url += '?limit=5';
-    }
-    return this.http.get<IGame[]>(url);
+  getGames() {
+    return this.http.get<IGame[]>;
   }
 
   getGame(id: string) {
@@ -23,5 +19,9 @@ export class GameService {
 
   createGame(title: string, imageUrl: string, genres: string, description: string, rating: string, price: string) {
     return this.http.post<IGame>('/api/games/', {title, imageUrl, genres, description, rating, price });
+  }
+
+  deleteGame(id: string|undefined){
+    return this.http.delete<any>(`/api/games/${id}`);
   }
 }
