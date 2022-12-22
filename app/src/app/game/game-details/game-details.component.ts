@@ -14,15 +14,24 @@ import { IGame } from '../../shared/interfaces/game';
 export class GameDetailsComponent {
 
   game : IGame;
-  // user!: IUser;
+  games !: IGame[];
+  user : IUser | undefined;
+  username: string | undefined
   // errorFetcingData: boolean = false;
   
   constructor(private apiService: ApiService,private activatedRoute: ActivatedRoute) {
     this.game = this.activatedRoute.snapshot.data?.['game'];
-    console.log(this.activatedRoute.snapshot.data?.['game']);
+    this.apiService.loadGames().subscribe({
+      next:(value) =>{
+        this.games = value
+        this.games = this.games.filter(x => x._id.toString() == this.game._id)
+        this.username =this.games[0]._ownerId.username;
+      },
+      error: (err) => {console.error(err)}
+    })
     
   }
-
+  
   ngOnInit(): void {   
   }
 }
