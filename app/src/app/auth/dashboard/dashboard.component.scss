@@ -30,3 +30,22 @@ img {
     max-width: 1200px;
     max-height: 1000px;
 }
+.site-btn-right {
+	display: inline-block;
+	border: none;
+	font-size: 14px;
+	font-weight: 600;
+	min-width: 164px;
+	padding: 21px 47px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	background: #dd1010;
+	color: black;
+	line-height: 1;
+	cursor: pointer;
+	text-align: center;
+    margin-left: 60%;
+}
+.paddingClass{
+    padding-bottom: 20px;
+}

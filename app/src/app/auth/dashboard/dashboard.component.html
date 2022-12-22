@@ -8,15 +8,17 @@
 
 <!-- Blog section -->
 <section class="characters-section character-one">
-	<div class="container" *ngFor="let game of games; let i = index">
+	<div class="container paddingClass" *ngFor="let game of games; let i = index">
 		<div class="character-info">
           <img src="{{game.imageUrl}}" alt="">
           <div class="post-date">Added By: {{game._ownerId.username}} </div>
           <h3 class="title">{{game.title}}</h3>
+          <h5>Description</h5>
           <p>{{game.description}}</p>
           <p>Geners: {{game.genres}}</p>
           <div class="post-date">Rating: {{game.rating}}/10</div>
           <div class="post-date">Price: {{game.price}}</div>
+          <button type="button" class="details-btn site-btn-right" (click)='delete(game._id)'>Delete Game</button>
       </div>
     </div>
 </section>
