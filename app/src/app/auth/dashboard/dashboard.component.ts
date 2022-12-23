@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit {
   delete(gameId:string){
     this.gameService.deleteGame(gameId).subscribe({
       next: ()=>{
-        this.router.navigate(['/games/all-games'])     
+        this.router.navigate(['/game/all-games'])     
       },
       error: (err) => {console.error(err)}
       
